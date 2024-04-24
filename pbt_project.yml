@@ -1,0 +1,84 @@
+name: ProtobufProjectEx
+description: ''
+version: 0.0.1
+author: scott@prophecy.io
+language: scala
+buildSystem: ''
+buildSystemDetails:
+  artefactID: protobufprojectex
+  parentArtefactID: scottprophecyioteam
+  buildSystem: maven
+  author: null
+  createdAt: '2024-04-24 21:02:01'
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: 2.12.15
+  gemLibsVersion: 1.0.4
+  gems:
+    gems/ProtobufFile:
+      name: ProtobufFile
+      category: Source/Target
+      subCategory: File
+      description: null
+      author: scott@prophecy.io
+      mode: batch
+      files:
+      - src/main/scala/scottprophecyioteam/protobufprojectex/gems/ProtobufFile.scala
+      gemType: DatasetGem
+      dependencies:
+      - type: coordinates
+        modifiedAt: '2024-04-24T21:05:58.407Z'
+        coordinates: org.apache.spark:spark-protobuf_2.12:3.5.1
+        name: protobuf
+        description: ''
+        enabled: true
+        id: NYCpgHEPJ4U11T5zqGV_e
+        createdAt: '2024-04-24T21:05:58.407Z'
+        entity: Gem
+        exclusions: []
+        editable: true
+      createdAt: '2024-04-24 21:03:38'
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2024-04-24 21:02:01'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+subgraphs: {}
+sqlModels: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies:
+- modifiedAt: '2024-04-24T21:02:01.159733Z'
+  name: plibMaven
+  version: 7.1.88
+  createdAt: '2024-04-24T21:02:01.159733Z'
+  type: plibMaven
+projectDependencies:
+  '12652':
+    projectUID: 12652
+    projectName: ProphecyWarehouseScala
+    repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12652.git&subPath=
+    version: 0.0.3
+    isDefault: true
+    author: null
+    createdAt: '2024-04-24 21:01:10'
+  '12651':
+    projectUID: 12651
+    projectName: ProphecySparkBasicsScala
+    repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12651.git&subPath=
+    version: 0.1.2
+    isDefault: true
+    author: null
+    createdAt: '2024-04-24 21:01:10'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
